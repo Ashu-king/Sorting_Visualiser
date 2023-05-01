@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="willoy-purple-user-icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg  navbar-dark" style="padding-bottom: 50px;">
+        <a href="" class="navbar-brand"><img src="willoy-purple-user-icon.png" alt="" style="width: 50px; height: 50px;"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"> <a href="#Bubblesort" class="nav-link">Bubble</a></li>
+            <li class="nav-item"> <a href="#Merge" class="nav-link">Merge</a></li>
+            <li class="nav-item"> <a href="#cta" class="nav-link">Insertion</a></li>
+          </ul>
+
+        </div>
+
+      </nav>
+       <!--------------------------------------------------------Bubble sort--------------------------------------------------------->
+      
+       <div style="text-align: center;">
+    <h1>Sorting Visualiser</h1>
+    <h2 style="text-decoration: underline; font-size: 90px; color: lightpink;" > Bubble Sort</h2>
+    
+    <div id="container"></div>
+    
+    <div style="margin-top: 90px; margin-bottom: 60px;">
+      <button 
+        class="btn btn-light btn-outline-danger btn-lg download-btn"
+        onclick="init()"
+        style="margin-right: 30px"
+      >
+        Jumble
+      </button>
+      <button id="Merge"
+        class="btn btn-light btn-outline-danger btn-lg download-btn"
+        onclick="play()"
+      >
+        Play
+      </button>
+    </div>
+    </div>
+    <!-------------------------------------------------------------Mergesort-------------------------------------------------------------->
+    
+    <!--Merge sort-->
+    <div style="text-align: center;">
+    <h2 style="text-decoration: underline; font-size: 90px; color: lightgreen; margin-bottom: 210px;"> Merge sort</h2>
+    <div id="container_2"></div>
+    <div style="margin-top: 190px; margin-bottom: 60px;">
+      <button id="Bubblesort"
+        class="btn btn-light btn-outline-danger btn-lg download-btn"
+        onclick="iny()"
+        style="margin-right: 30px"
+      >
+        Jumble
+      </button>
+      <button
+        class="btn btn-light btn-outline-danger btn-lg download-btn"
+        onclick="pl()"
+      >
+        Play
+      </button>
+    </div>
+  </div>
+  <!--------------------------------------------------------end--------------------------------------------------------->
+  <footer id="footer"     style="padding-bottom: 50px;">
+    <img class="social-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACvElEQVR4nO2ZTWsUQRCGn0P04pLE+3oQs1nBi/h1EPVg9GziX1GTP6CoR2MOGvHjP4gRsxtJBH+Cq7nHk27EGIyXtaWgGoaB+ejpWbsX9oUX9jBVXe9OVXVNN4wxRhRoA0tAF/gM7AOmJoov8dkBFnWt2nEO2Kgx6LL8CFysQ8AhYAX4G0CEUcraj4GJqiKOAu8DCjApbmhMzm8iRCqZAn4ADrsIWYkgaJPBZZfCDlkTpoAS29kyQmJMKZOitOhctAMH+AZoKtcKnm3lCVkKLKSZiOVYwbN38oR0RkjIep6Q7RqC6QPPgRuaqkeU8nseeAHsZtiuqQDh24J1vuQJ2fMQ8Bu4C0xSjCngntpUXW8vb4GqTndSLfE68Ez/tf3EQLgKXEu1+h2PdTNRVYTN7Vlgq4TNZqLrND3EZKJKOtk3cSUn97Nq6bLangcOQgqRmrBvwkVEUsyM+ngQSkhfi5aS6ZRFmbAF0xX+jFqESIu1hW08Oae+XoYQIvsE2p18hTxVXwshhEhdoC3WV4i0ZkE7hJCG2vyqQYj4EDRGXchP9TU56qnVC5la82qzWoOQJ+rrZgghMsWis5OvkKvq61XoDXHTQ4R8WtsN8UcIIUZHccFx4JvniPKwgn1tQg50FEcHwL6D7XfgktpeCD00mtQYP1PydFLS6YTayNfg14prZ8J4iJFR3GJOx46e7jPCT9qdbGHbN1FVhBnWp66kxn0t2iJMa038Gdan7raHY8tdnWJlADypE0BDfy9oi3XtTsb18CH0cZBx4Ls8IYsRBGhK8laekFYEARrHWS8T3QiCND6njBangUEEwZoMDspeK6B3diZSPsIBE5Gm2Jbr1Rt68RjTpU+35Gab+WaWA1/FDTSdKl9PJ3EKeB1ARAc4wxDQ0puidT3CqePgwVJ89XTHvl10tTbGGPwf/APThWw4L8JxcwAAAABJRU5ErkJggg==">
+    <div> <a class="footer-link" href="https://www.instagram.com/">Instagram</a></div>
+    <img class="social-icon" src="twitter.png" style=" width:50px;" alt="">
+    <div>  <a class="footer-link" href="https://twitter.com/">Twitter</a></div>
+    <img class="social-icon" src="facebook.png" style=" width:50px;" alt="">
+    <div>  <a class="footer-link" href="https://www.facebook.co/">facebook</a></div>
+
+      
+    <p id="copyright"> 2023 © Ashu from Self XYZ company.</p>
+
+  </footer>
+    <script src="sort.js"></script>
+  </body>
+</html>

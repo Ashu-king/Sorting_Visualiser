@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Merriweather:ital@1&family=Sacramento&display=swap");
+#container {
+  margin-top: 30px;
+  height: 500px;
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+}
+#container_2 {
+  margin-top: 30px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.bar {
+  width: 25px;
+  background-color: azure;
+  margin: 2px;
+  border-radius: 5px;
+}
+.bar2 {
+  width: 20px;
+  background-color: azure;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.navbar {
+  padding: 0 0 1.5rem;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "montserrat-light";
+}
+.navbar-brand {
+  font-family: "ubuntu";
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+h1,
+h2 {
+  color: rgb(63, 198, 198);
+  font-family: "Sacramento", cursive;
+  font-size: 562.5%;
+  margin-top: 0;
+  padding-top: 30px;
+  display: block;
+  margin: auto auto;
+}
+#copyright {
+  color: #ff4c68;
+  font-weight: 900;
+}
+.social-icon {
+  margin: 20px 10px;
+}
+#footer {
+  padding: 7% 0 15%;
+  background-color: azure;
+  text-align: center;
+}
+
+button {
+  font-family: "Merriweather";
+  font-size: large;
+}
+body {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Merriweather";
+  background: linear-gradient(261deg, #8024ba, #9a2b4b);
+}
